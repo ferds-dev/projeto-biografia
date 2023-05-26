@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Fernandes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <!--
+                <div class="logo">
+                    <i class="fa-solid fa-j"></i>
+                </div> 
+                -->
+                <div class="logo-text">                      
+                    João Fernandes
+                </div>
+
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <ul class="navlinks">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#glass_card">Methodology</a></li>    
+                    </ul>
+                </nav>
+
+            </header>
+            <main id="home">
+                <div class="container">
+                    <div class="hero-pic">
+                        <img src="images/eu2.jpg" alt="profile">
+                    </div>
+                    <div class="hero-text">
+                        <h5>Hi I`m <span class="input"></span></h5>
+                        <h1>João Fernandes</h1>
+                        <p>Hi, i`m a passionate Front-End Developer, eager to embark on my professional career, with limited exeperience and based in Brasilia, Brazil &#x1F4CD </p>
+                        <div class="btn-group">
+                            <a href="#" class="btn active">Download CV</a>
+                            <a href="https://contate.me/joaofernandesdev" class="btn" target="_blank">Contact</a>
+                        </div>
+                        <div class="social">
+                            <a href="https://www.linkedin.com/in/joaofernandesdev/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/joao.pzl/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://github.com/ferds-dev" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                        </div>
+                    </div>
+            </main>
+    <section id="about">
+        <div class="row">
+            <h2 class="h2_about">ABOUT</h2>
+            <div class="col1">
+                <p>As a Junior Developer, my ambition to enter the job market as a Front-End Developer and UI Designer is fueled by a deep passion for creating visually appealing and interactive user experiences. However, I am well aware that breaking into this competitive industry can be challenging.</p>
+            </div>
+            <div class="col2">
+                <p>One of the major difficulties I anticipate is gaining initial traction and acceptance from potential employers. Despite this hurdle, I firmly believe that through continuous learning and honing my skills, I can overcome these obstacles and carve a niche for myself in the industry.</p>
+            </div>
+            <div class="col3">
+                <p>
+                    While the journey may be demanding, I am committed to facing these difficulties head-on. I understand that the path to becoming a proficient Front-End Developer and UI Designer requires persistence, resilience, and an unwavering drive to excel.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    	 <h2 class="h2_curiosities">METHODOLOGY</h2> 
+        <section id="glass_card">
+          
+            <div class="container_card">
+                <div class="card">
+                    <div class="content_card">
+                        <h2>01</h2>
+                        <h3> &#x1F4D8 </h3>
+                        <p>I adopt a disciplined study methodology, combining self-discipline and healthy competitiveness. I set goals, allocate time for learning and practice, and engage in coding challenges and open-source projects.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content_card">
+                        <h2>02</h2>
+                        <h3> &#x1F525 </h3>
+                        <p>The desire to outperform others drives me to innovate and find unique solutions to problems. It pushes me to constantly refine my code, optimize performance, and create user experiences that stand out from the crowd.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content_card">
+                        <h2>03</h2>
+                        <h3> &#x1F3A8 </h3>
+                        <p>My passion for design empowers me to create applications that surpass technical requirements and deliver enjoyable experiences. The fusion of my technical expertise and design passion enables exceptional results and a positive impact in the digital world.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <footer>
+        <p>Developed by <a href="https://www.instagram.com/joao.pzl/" target="_blank">João Fernandes</a>. &copy 2023</p>
+    </footer>
+    <!--Typed js for typing text effect-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.js"></script>
+    <script>
+        /* creating button click show hide navbar */
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open")
+
+        })
+
+        var typed=new Typed(".input",{
+            strings:["Frontend Developer", "UX Designer", "Web Developer"],
+            typeSpeed: 70,
+            backSpeed: 55,
+            loop:true
+        })
+    </script>
+
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".card"),{
+		max: 25,
+		speed: 400,
+        glare: true,
+        "max-glare": 1,
+	});
+    </script>
+</body>
+</html>
